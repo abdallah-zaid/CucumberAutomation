@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.208" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="Shopping Cart" name="Add item to cart" time="0.022">
+<testsuite name="Cucumber" time="0.175" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="An example" name="The example" time="0.02">
 <system-out><![CDATA[
-Given a user is logged in...................................................passed
-And the user has items in their shopping cart...............................passed
-When the user adds an item to the cart......................................passed
-Then the item should be added successfully..................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Shopping Cart" name="Remove item from cart" time="0.002">
-<system-out><![CDATA[
-Given a user is logged in...................................................passed
-And the user has items in their shopping cart...............................passed
-When the user removes an item from the cart.................................passed
-Then the item should be removed successfully................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Shopping Cart" name="Empty the cart" time="0.003">
-<system-out><![CDATA[
-Given a user is logged in...................................................passed
-And the user has items in their shopping cart...............................passed
-When the user empties the cart..............................................passed
-Then the cart should be empty...............................................passed
+Given an example scenario...................................................passed
+When all step definitions are implemented...................................passed
+And additional steps are added..............................................passed
+But unnecessary steps are removed...........................................passed
+Then the scenario passes....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

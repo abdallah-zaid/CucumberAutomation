@@ -18,7 +18,7 @@ public class StrongPasswordSteps {
 
 	@Then("the password should be strong")
 	public void the_password_should_be_strong() {
-        
+
 		boolean isStrong = this.validateStrongPassword();
 		System.out.println("Is the password strong? " + isStrong);
 		assertTrue(isStrong);
