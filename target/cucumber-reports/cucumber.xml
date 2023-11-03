@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.207" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="User Sign Up" name="Sign Up with Valid User Information" time="0.033">
+<testsuite name="Cucumber" time="0.208" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Shopping Cart" name="Add item to cart" time="0.022">
 <system-out><![CDATA[
-Given a user visits the sign-up page........................................passed
-When the user enters the following user information:........................passed
-And the user clicks the sign-up button......................................passed
-Then the user should be registered successfully.............................passed
+Given a user is logged in...................................................passed
+And the user has items in their shopping cart...............................passed
+When the user adds an item to the cart......................................passed
+Then the item should be added successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart" name="Remove item from cart" time="0.002">
+<system-out><![CDATA[
+Given a user is logged in...................................................passed
+And the user has items in their shopping cart...............................passed
+When the user removes an item from the cart.................................passed
+Then the item should be removed successfully................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart" name="Empty the cart" time="0.003">
+<system-out><![CDATA[
+Given a user is logged in...................................................passed
+And the user has items in their shopping cart...............................passed
+When the user empties the cart..............................................passed
+Then the cart should be empty...............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
