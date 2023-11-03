@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.204" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="An example" name="The example" time="0.021">
+<testsuite name="Cucumber" time="0.27" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="An example" name="The example" time="0.029">
 <system-out><![CDATA[
 Given an example scenario...................................................passed
 When all step definitions are implemented...................................passed
@@ -9,11 +9,17 @@ But unnecessary steps are removed...........................................pass
 Then the scenario passes....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Simple Calculator" name="Addition" time="0.018">
+<testcase classname="Simple Calculator" name="Addition" time="0.017">
 <system-out><![CDATA[
 Given I have entered the numbers 5 and 7 into the calculator................passed
 When I press the add button.................................................passed
 Then the result should be 12 on the screen..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Strong Password Validation" name="Validate Strong Password" time="0.007">
+<system-out><![CDATA[
+Given a user with password "Strong@123".....................................passed
+Then the password should be strong..........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
