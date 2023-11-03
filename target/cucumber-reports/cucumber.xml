@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.265" tests="5" skipped="0" failures="0" errors="0">
-<testcase classname="An example" name="The example" time="0.024">
+<testsuite name="Cucumber" time="0.291" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="An example" name="The example" time="0.015">
 <system-out><![CDATA[
 Given an example scenario...................................................passed
 When all step definitions are implemented...................................passed
@@ -9,20 +9,20 @@ But unnecessary steps are removed...........................................pass
 Then the scenario passes....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Simple Calculator" name="Addition" time="0.014">
+<testcase classname="Simple Calculator" name="Addition" time="0.015">
 <system-out><![CDATA[
 Given I have entered the numbers 5 and 7 into the calculator................passed
 When I press the add button.................................................passed
 Then the result should be 12 on the screen..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Strong Password Validation" name="Validate Strong Password" time="0.003">
+<testcase classname="Strong Password Validation" name="Validate Strong Password" time="0.005">
 <system-out><![CDATA[
 Given a user with password "Strong@123".....................................passed
 Then the password should be strong..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Sign Up" name="Sign Up with Valid User Information" time="0.009">
+<testcase classname="User Sign Up" name="Sign Up with Valid User Information" time="0.008">
 <system-out><![CDATA[
 Given a user visits the sign-up page........................................passed
 When the user enters the following user information:........................passed
@@ -30,12 +30,36 @@ And the user clicks the sign-up button......................................pass
 Then the user should be registered successfully.............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Sign Up" name="Sign Up with Invalid User Information" time="0.004">
+<testcase classname="User Sign Up" name="Sign Up with Invalid User Information" time="0.001">
 <system-out><![CDATA[
 Given a user visits the sign-up page........................................passed
 When the user enters the following user information:........................passed
 And the user clicks the sign-up button......................................passed
 Then the user should see an error message...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Valid User Login - Example #1.1" time="0.005">
+<system-out><![CDATA[
+Given a user is on the login page...........................................passed
+When the user enters valid username "user1" and password "password1"........passed
+And the user clicks the login button........................................passed
+Then the user should be logged in successfully..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Valid User Login - Example #1.2" time="0.002">
+<system-out><![CDATA[
+Given a user is on the login page...........................................passed
+When the user enters valid username "user2" and password "password2"........passed
+And the user clicks the login button........................................passed
+Then the user should be logged in successfully..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Valid User Login - Example #1.3" time="0.001">
+<system-out><![CDATA[
+Given a user is on the login page...........................................passed
+When the user enters valid username "user3" and password "password3"........passed
+And the user clicks the login button........................................passed
+Then the user should be logged in successfully..............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
