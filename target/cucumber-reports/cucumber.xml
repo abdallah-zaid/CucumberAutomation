@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.141" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="An example" name="The example" time="0.015">
+<system-out><![CDATA[
+Given an example scenario...................................................passed
+When all step definitions are implemented...................................passed
+And additional steps are added..............................................passed
+But unnecessary steps are removed...........................................passed
+Then the scenario passes....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
