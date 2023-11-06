@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="2.228" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="An example" name="The example" time="0.017">
+<testsuite name="Cucumber" time="4.16" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Application Login" name="Home page default login" time="2.171">
 <system-out><![CDATA[
-Given an example scenario...................................................passed
-When all step definitions are implemented...................................passed
-And additional steps are added..............................................passed
-But unnecessary steps are removed...........................................passed
-Then the scenario passes....................................................passed
+Given User is on the login page.............................................passed
+When User login into application with "user" and password "user"............passed
+And I click Submit..........................................................passed
+Then I see the message "Login successful"...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application Login" name="Failure login" time="0.169">
+<system-out><![CDATA[
+Given User is on the login page.............................................passed
+When User login into application with "bad-user" and password "bad-password".passed
+And I click Submit..........................................................passed
+Then I see the message "Invalid credentials"................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
