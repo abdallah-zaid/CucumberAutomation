@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.175" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="An example" name="The example" time="0.02">
+<testsuite name="Cucumber" time="2.228" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="An example" name="The example" time="0.017">
 <system-out><![CDATA[
 Given an example scenario...................................................passed
 When all step definitions are implemented...................................passed
